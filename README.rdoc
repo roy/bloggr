@@ -1,0 +1,15 @@
+== Bloggr
+
+The code from the tutorial "Building an App with Ember.js" by Tom Dale.
+
+== Stuff I have added
+
+1. Rails backend
+2. Put everything in different files
+3. Backend uses active_serializers for json response
+
+== Stuff I'll probably change more
+
+1. Convert to coffeescript
+
+Original video is at: https://www.youtube.com/watch?feature=player_embedded&v=Ga99hMi7wfY

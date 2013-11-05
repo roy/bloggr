@@ -1,18 +1,18 @@
 <div class='container'>
   <div class='row'>
-    <div class='span3'>
+    <div class='col-md-3'>
       <table class='table'>
         <thead>
           <tr><th>Recent Posts</th></tr>
         </thead>
         {{#each model}}
         <tr><td>
-           {{#linkTo 'post' this}} {{title}} <small class='muted'>by {{author}}</small>{{/linkTo}}
+           {{#linkTo 'post' this}} {{title}} <small class='text-muted'>by {{author}}</small>{{/linkTo}}
         </td></tr>
         {{/each}}
       </table>
     </div>
-    <div class='span9'>
+    <div class='col-md-9'>
       {{outlet}}
     </div>
   </div>

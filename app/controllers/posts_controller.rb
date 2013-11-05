@@ -10,14 +10,24 @@ class PostsController < ApplicationController
   end
 
   def create
-    respond_with Post.create(params[:post])
+    respond_with Post.create(post_params)
   end
 
   def update
-    respond_with Post.update(params[:id], params[:post])
+    respond_with Post.update(params[:id], post_params)
   end
 
   def destroy
     respond_with Post.destroy(params[:id])
+  end
+
+  private
+  def post_params
+    params.require(:post).permit(
+      :title,
+      :author,
+      :intro,
+      :extended
+    )
   end
 end
